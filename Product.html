@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" >
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style30.css">
+    <title>NAB It Store</title>
+    <style>
+        .responsive-png{
+            width: 10%;
+            height: auto;
+        }   
+    </style>
+    <style>
+        .responsive-img{
+            width: 5%;
+            height: auto;
+        }   
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <img src="image/NABIT-removebg-preview.png" class="responsive-img">
+            <ul>
+                <li><a href="Home.html">หน้าหลัก</a></li>
+                <li><a href="Product.html">สินค้า</a></li>
+                <li><a href="About.html">เกี่ยวกับเรา</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="ค้นหา">
+                <button id="searchButton">ค้นหา</button>
+                <div id="searchResults"></div>
+              </div>
+        </nav>
+    </header>
+    <br>
+</header>
+</section>
+<br>
+
+    <!--การสร้าง Slider-->
+    <div class="slider">
+        <div class="slides">
+            <img src="image/Banner/4.png" alt="Image 1">
+        </div>
+        <div class="navigation">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slides img");
+            if (slideIndex >= slides.length) { slideIndex = 0; }
+            if (slideIndex < 0) { slideIndex = slides.length - 1; }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex].style.display = "block";
+        }
+
+        function moveSlide(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        // Auto Slide every 3 seconds
+        setInterval(function() {
+            slideIndex++;
+            showSlides();
+        }, 3000);
+
+        showSlides();  // Initial call to display first slide
+    </script>
+    <br>
+
+    <!-- tab -->
+    <div class="tab-container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="Mouse-tab" data-bs-toggle="tab" data-bs-target="#Mouse" type="button" role="tab" aria-controls="#Mouse" aria-selected="true">
+                    <b>Mouse</b>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="KeyBoard-tab" data-bs-toggle="tab" data-bs-target="#KeyBoard" type="button" role="tab" aria-controls="KeyBoard" aria-selected="false">
+                    <b>KeyBoard</b>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Headset-tab" data-bs-toggle="tab" data-bs-target="#Headset" type="button" role="tab" aria-controls="#Headset" aria-selected="false">
+                    <b>Headset</b>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Monitor-tab" data-bs-toggle="tab" data-bs-target="#Monitor" type="button" role="tab" aria-controls="#Monitor" aria-selected="false">
+                    <b>Monitor</b>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="Computerset-tab" data-bs-toggle="tab" data-bs-target="#Computerset" type="button" role="tab" aria-controls="#Computerset" aria-selected="false">
+                    <b>Computer Set</b>
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="Mouse" role="tabpanel" aria-labelledby="Mouse-tab">
+                <p>
+                    <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                </p>
+                    <!--Image Mouse-->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/pic4.jpg" class="img-fluid">
+                    <p>Logitech G Pro X SuperLight</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic6.jpg" class="img-fluid">
+                    <p>Razer Viper V3 Pro</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic5.jpg" class="img-fluid">
+                    <p>Razer Viper V2 Pro</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/pic7.jpg" class="img-fluid">
+                    <p>Logitech G502</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic8.jpg" class="img-fluid">
+                    <p>ZOwie EC3 Cw</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic9.jpg" class="img-fluid">
+                    <p>Fantech WG10</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/pic10.jpg" class="img-fluid">
+                    <p>VGN Drgonfly F1 Moba</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic11.jpg" class="img-fluid">
+                    <p>Endgame Gear OP1we</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/pic12.jpg" class="img-fluid">
+                    <p>DarmoShark M3</p>
+                </div>
+            </div>
+            </div>
+            <div class="tab-pane fade" id="KeyBoard" role="tabpanel" aria-labelledby="KeyBoard-tab">
+                <p>
+                    <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                </p>
+                <!--Image KeyBoard-->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/logitech GProX60.jpg" class="img-fluid">
+                    <p>Logitech G Pro X 60 LightSpeed</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/logitech G515.jpg" class="img-fluid">
+                    <p>Logitech G515</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/akko 5975B plus.jpg" class="img-fluid">
+                    <p>Akko 5975B Plus</p>
+                </div>
+            </div>m
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/Aula F65.jpg" class="img-fluid">
+                    <p>Aula F65</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Keychorn V3.jpg" class="img-fluid">
+                    <p>Keychorn V3</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Nubwo NK35.jpg" class="img-fluid">
+                    <p>Nubwo NK35/p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/razer huntsman v3 pro.jpg" class="img-fluid">
+                    <p>Razer Huntsman V3 Pro</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/wooting 60he.jpg" class="img-fluid">
+                    <p>Wooting 60He</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Royal Kludge RK855.jpg" class="img-fluid">
+                    <p>Royal Kludge Rk855</p>
+                </div>
+            </div>
+            </div>
+
+             <div class="tab-pane fade" id="KeyBoard" role="tabpanel" aria-labelledby="KeyBoard-tab">
+                <p>
+                    <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                </p>
+                <!--Image KeyBoard-->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/logitech GProX60.jpg" class="img-fluid">
+                    <p>Logitech G Pro X 60 LightSpeed</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/logitech G515.jpg" class="img-fluid">
+                    <p>Logitech G515</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/akko 5975B plus.jpg" class="img-fluid">
+                    <p>Akko 5975B Plus</p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/Aula F65.jpg" class="img-fluid">
+                    <p>Aula F65</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Keychorn V3.jpg" class="img-fluid">
+                    <p>Keychorn V3</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Nubwo NK35.jpg" class="img-fluid">
+                    <p>Nubwo NK35/p>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <img src="image/keyboard/razer huntsman v3 pro.jpg" class="img-fluid">
+                    <p>Razer Huntsman V3 Pro</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/wooting 60he.jpg" class="img-fluid">
+                    <p>Wooting 60He</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="image/keyboard/Royal Kludge RK855.jpg" class="img-fluid">
+                    <p>Royal Kludge Rk855</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="tab-pane fade" id="Headset" role="tabpanel" aria-labelledby="Headset-tab">
+                <p>
+                    <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                </p>
+                <!--Image Headset-->
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="image/Head Set/Razer-Kraken-V3.jpg" class="img-fluid">
+                        <p>Razer Kraken V3</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/razer blackshark v3 X.jpg" class="img-fluid">
+                        <p>Razer Blackshark V3 X</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/logitech G pro x wireless.jfif" class="img-fluid">
+                        <p>Logitech G Pro X Wireless</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="image/Head Set/logitech g435.jfif" class="img-fluid">
+                        <p>Logitech G435</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/signo hp827.jfif" class="img-fluid">
+                        <p>Sigo HP827</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/fantech hg27.jpg" class="img-fluid">
+                        <p>Fantech HG27</p>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <img src="image/Head Set/JBL Quantum ONE.jpg" class="img-fluid">
+                        <p>JBL Quantum ONE</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/hyperx-cloud-iii-.jpg" class="img-fluid">
+                        <p>Hyper X Cloud iii Wireless</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="image/Head Set/Onikuma-K9-7.1.jpg" class="img-fluid">
+                        <p>Onikuma K9 7.1</p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="tab-pane fade" id="Monitor" role="tabpanel" aria-labelledby="Monitor-tab">
+                    <p>
+                        <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                    </p>
+                    <!--Image Monitor-->
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Monitor/MSI Mag 27 VA 2K 170Hz.jpg" class="img-fluid">
+                            <p>MSI MAG 27inch VA 2K 170Hz</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/acer nitro 23.8 IPS 180Hz.jpg" class="img-fluid">
+                            <p>Acer Nitro 23.8inch IPS 180Hz</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/zowie benq xl2746k TN 240Hz.jpg" class="img-fluid">
+                            <p>Zowie BenQ Xl2746k TN 240Hz</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Monitor/HP-Omen-23.8 165Hz.jpg" class="img-fluid">
+                            <p>HP Omen 23.8inch 165Hz IPS</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/AOC Monitor 23.8 va FHD 180Hz.jpg" class="img-fluid">
+                            <p>AOC Monitor 23.8inch VA FullHD 180Hz</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/Dahua E330C 34 2k va 165Hz.jpg" class="img-fluid">
+                            <p>Dahua E330C 34inch 2K VA 165Hz</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Monitor/DELL-MONITOR-S2721HN-IPS-75Hz-1.jpg" class="img-fluid">
+                            <p>DELL S2721HN 32inch IPS 75Hz/p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/LG UltarGear 27inch ips 180Hz.jfif" class="img-fluid">
+                            <p>LG UltarGear 27inch IPS 180Hz</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Monitor/samsung-odyssey-g7-ls28bg700eexxt-28-ips-4k-gaming-monitor-144hz-front-view.jpg" class="img-fluid">
+                            <p>Samsung Odyssey G7 28inch IPS 4k 144Hz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="Computerset" role="tabpanel" aria-labelledby="Computerset-tab">
+                    <p>
+                        <b>NAB It Store แหล่งรวมอุปกรณ์ Gaming Gear ไว้มากมายให้คุณลูกค้าได้เลือกซื้อ</b>
+                    </p>
+                    <!--Image Computer Set-->
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/AMD_SPEC_RYZEN7_5700G_RTX_3050_6GB_ZZ_1.jpg" class="img-fluid">
+                            <p>Ryzen7 RTX3050</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/i3_14100F_RTX_4060_8GB_cc_ลงแล้ว.jpg" class="img-fluid">
+                            <p>Intel i3_14100F RTX4060</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/AMD_SPEC_RYZEN7_8700G_RTX_4070_TI_SUPER_12GB_ZZ.jpg" class="img-fluid">
+                            <p>Ryzen7 RTX4070</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_i3_14100_CPU_onboard_zz.jpg" class="img-fluid">
+                            <p>Intel i3_14100 Onboard</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_I3_14100F_RTX_4060_TI_8GB_ZZ.jpg" class="img-fluid">
+                            <p>Intel i3_14100F RTX4060 TI</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_i5_14100_RTX_3050_6GB_ZZ.jpg" class="img-fluid">
+                            <p>Intel i5_14100 RTX3050</p>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_i5_14500_RTX_4060_8GB_ZZ.jpg" class="img-fluid">
+                            <p>Intel i5_14500 RTX4060</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_i7_14700F_RTX_4060_8GB_zz.jpg" class="img-fluid">
+                            <p>Intel i7_14700F RTX4060</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="image/Computer Set/INTEL_SPEC_i7_14700F_RX_6800_XT_16GB_ZZ_1.jpg" class="img-fluid">
+                            <p>Intel i7_14700F RX6800 XT</p>
+                        </div>
+                    </div>
+        </div>
+     </div>
+     <br>
+
+     <!-- JavaScript for Tab Functionality -->
+     <script>
+        // Function to switch between tabs
+        function switchTab(event, tabName) {
+            // Hide all tab content
+            const tabContents = document.querySelectorAll('.tab-pane');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+    
+            // Remove active class from all tabs
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                tab.setAttribute('aria-selected', 'false');
+            });
+    
+            // Show the content of the clicked tab
+            const selectedTabContent = document.getElementById(tabName);
+            selectedTabContent.classList.add('active');
+    
+            // Add active class to the clicked tab
+            event.target.classList.add('active');
+            event.target.setAttribute('aria-selected', 'true');
+        }
+    </script>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>Copyright &copy; 2024 บริษัท NAB It Store จำกัด</p>
+        <p>Email : NABitstore60@gmail.com</p>
+    </footer>
+</body>
+</html>

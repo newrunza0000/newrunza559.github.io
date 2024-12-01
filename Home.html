@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAB It Store</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" >
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css"> <!-- การเชื่อมโยงกับไฟล์ CSS -->
+    <style>
+        .responsive-png{
+            width: 10%;
+            height: auto;
+        }   
+    </style>
+    <style>
+        .responsive-img{
+            width: 5%;
+            height: auto;
+        }   
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <img src="image/NABIT-removebg-preview.png" class="responsive-img">
+            <ul>
+                <li><a href="Home.html">หน้าหลัก</a></li>
+                <li><a href="Product.html">สินค้า</a></li>
+                <li><a href="About.html">เกี่ยวกับเรา</a></li>
+                <li><a href="login.html">เข้าสู่ระบบ</a></li>
+                <li><a href="register.html">สมัครสมาชิก</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="ค้นหา">
+                <button id="searchButton">ค้นหา</button>
+                <div id="searchResults"></div>
+              </div>
+
+        </nav>
+    </header>
+    <br>
+
+    <!--การสร้าง Slider-->
+    <section id="Slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#mySlider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="1" ></button>
+                <button data-bs-target="#mySlider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-1 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-2 ">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item carousel-image-3 ">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-next" data-bs-target="#mySlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                  <button class="carousel-control-prev" data-bs-target="#mySlider" data-bs-target="#mySlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="home">
+        <h1 class="centerheader">ยินดีต้อนรับสู่ NAB IT Store</h1>
+        <p class="centerheader">"กำลังมองหาคอมพิวเตอร์สเปคแรงๆ หรืออุปกรณ์เกมมิ่ง สำหรับเล่นเกมส์อยู่หรือเปล่า? มาที่ NAB IT Store เราพร้อมแนะนำคอมพิวเตอร์ที่ตอบโจทย์ความต้องการของคุณในราคาสุดพิเศษ พร้อมบริการจัดส่งฟรีทั่วประเทศ"</p>
+        <div class="banner-container">
+            <img src="image/sale.png" alt="แบนเนอร์โปรโมชั่น">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="aboutme">
+            <h1 class="centerheader">เกี่ยวกับเรา</h1>
+            <h3>NAB IT Store: เพื่อนคู่คิดด้านไอทีของคุณ</h3>
+            <p>เราคือ NAB IT Store ร้านค้าออนไลน์ที่มุ่งมั่นที่จะเป็นศูนย์รวมสินค้าไอทีที่ครบครันที่สุดเราคัดสรรสินค้าที่มีคุณภาพสูงจากแบรนด์ชั้นนำพร้อมให้บริการหลังการขายที่เป็นเลิศเพื่อให้คุณมั่นใจได้ว่าจะได้รับสินค้าและบริการที่ดีที่สุดเสมอเพราะเราให้ความสำคัญกับลูกค้าทุกท่านเสมอ เราเชื่อว่าการบริการที่ดีคือหัวใจสำคัญของธุรกิจ ดังนั้นเราจึงมุ่งมั่นที่จะให้บริการลูกค้าด้วยความจริงใจและใส่ใจในทุกขั้นตอน ไม่ว่าจะเป็นการให้คำปรึกษา การจัดส่งสินค้า หรือการบริการหลังการขาย เรายินดีให้บริการคุณด้วยความเต็มใจ</p>
+            <h3>ทำไมต้องเลือกเรา ?</h3>
+            <ul>
+                <li>- สินค้าหลากหลาย ครบวงจร</li>
+                <li>- ราคาพิเศษ โปรโมชั่นดีๆ</li>
+                <li>- บริการจัดส่งรวดเร็ว</li>
+                <li>- ทีมงานผู้เชี่ยวชาญคอยให้คำปรึกษา</li>
+            </ul>
+        </div>
+        
+        
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2024 บริษัท NAB It Store จำกัด</p>
+        <p>Email : NABitstore60@gmail.com</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+*{
+    font-family: "Itim",cursive;
+}
+.carousel-item{
+    height: 700px;
+    
+}
+.carousel-image-1{
+    background-image: url('image/pic6.jpg');
+    background-size: cover;
+    
+}
+.carousel-image-2{
+    background-image: url('image/pic11.jpg');
+    background-size: cover;
+    
+}
+.carousel-image-3{
+    background-image: url('image/pic8.jpg');
+    background-size: cover;
+    
+}
+section.footer p{
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex>* {
+    margin: 2px;
+}
+h3 {
+    font-size: 1rem;
+    padding: 1rem;
+}
+.carousel-image-4{
+    background-image: url('image/Banner/6.png');
+    background-size: cover; 
+}
+.carousel-image-5{
+    background-image: url('image/Banner/7.png');
+    background-size: cover;
+}
+.carousel-image-6{
+    background-image: url('image/pic14.jpeg');
+    background-size: cover;
+}
+.carousel-image-7{
+    background-image: url('image/Banner/5.png');
+    background-size: cover;
+}
+.carousel-image-8{
+    background-image: url('image/pic16.jpg');
+    background-size: cover;
+}
+.carousel-image-9{
+    background-image: url('image/pic17.jpg');
+    background-size: cover;
+}

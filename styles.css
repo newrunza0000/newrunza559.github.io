@@ -1,0 +1,214 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:darksalmon;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    justify-content: right;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: darksalmon;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  #searchButton {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #searchResults {
+    margin-top: 20px;
+  }
+
+.navbar{
+    display: flex;
+    justify-content:space-around; /* แบ่งพื้นที่ว่างให้เท่าๆ กัน */
+    align-items: center; /* จัดตำแหน่งองค์ประกอบให้ตรงกลางแนวตั้ง */
+}
+.carousel-image-1{
+    background-image: url('image/Banner/1.png');
+    background-size: cover;
+}
+.carousel-image-2{
+    background-image: url('image/Banner/2.png');
+    background-size: cover;
+}
+.carousel-image-3{
+    background-image: url('image/Banner/3.png');
+    background-size: cover;
+}
+.carousel-item{
+    height: 600px;
+    
+}
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner {
+    width: 100%; /* กำหนดความกว้างของแต่ละแบนเนอร์ */
+    text-align: center;
+}
+
+.banner img {
+    width: 200%; /* ให้รูปภาพเต็มความกว้างของแบนเนอร์ */
+}
+.centerheader{
+    text-align: center;
+    text-shadow: 2px 2px 4px #888;
+}
+.aboutme {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+h1, h2, h3 {
+    margin: 10px 0;
+  }
+  /* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+h1, p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+/* Container and Box Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.box {
+    background-color: #f5f5dc; /* cornsilk */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    flex: 2;
+}
+
+.info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #0066cc;
+}
+
+.info p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        max-width: 150px;
+    }
+
+    .info {
+        text-align: center;
+    }
+}

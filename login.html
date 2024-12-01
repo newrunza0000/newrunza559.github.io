@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>NewBie Jelly</title>
+</head>
+<body>
+    <!--การสร้าง Slider-->
+    <section id="Slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="mySlider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#mySlider" data-bs-slide-to="0" class="active"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-image-5 active">
+                    <div class="container">
+                        <div class="carousel-caption d-none d-sm-block">
+                            <h1 class="display-3">ยินดีต้อนรับเข้าสู่ระบบ</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Form Login-->
+    <section class="form-login">
+        <div class="container">
+            <h2> <i class='bx bxs-user-circle'></i>เข้าสู่ระบบ</h2>
+            <form action="Product.html" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn btn-success">เข้าสู่ระบบ</button>
+                <button type="reset" class="btn btn-danger">ล้างข้อมูล</button>
+                <a href="Home.html" class="btn btn-info">กลับหน้าหลัก</a>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
